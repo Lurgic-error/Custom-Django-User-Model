@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center bd-highlight">
+   <div class="jumbotron jumbotron-fluid w-100 h-100">
+       <div class="container">
+           <h1 class="display-4">Customer User Model</h1>
+           <p class="lead">This is a project that explores django user models and messes with it.</p>
+           <div class="d-flex justify-content-start align-items-center">
+               <a class="btn btn-primary btn-lg align-self-center mr-4" href="{% url 'accounts:create' %}" role="button">Register</a>
+               <a class="btn btn-primary btn-lg align-self-center" href="{% url 'accounts:login' %}" role="button">Login</a>
+           </div>
+       </div>
+   </div>
+</div>
+{% endblock %}
